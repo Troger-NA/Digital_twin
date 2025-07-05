@@ -20,7 +20,7 @@
 cd Mock
 docker-compose up --build
 ```
-📖 [Ver guía completa](Mock/README)
+📖 [Ver guía completa](Mock/README.md)
 
 
 
