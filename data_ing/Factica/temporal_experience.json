@@ -1,0 +1,62 @@
+{
+  "experiencia_laboral": [
+    {
+      "empresa": "Meton AI",
+      "periodo": "Abril 2023 – Presente",
+      "rol": "Coordinador de operaciones & AI Engineer",
+      "skills": [
+        "Desarrollo de sistemas multi-agente",
+        "Automatización de pipelines",
+        "Gestión de infraestructura HPC",
+        "Coordinación de equipos cross-funcionales",
+        "Automatización de logs y trazabilidad",
+        "Modelado y gestión de datos para Drug Discovery",
+        "Implementación de software propio y de terceros"
+      ]
+    },
+    {
+      "empresa": "Stealth Crypto Project",
+      "periodo": "Octubre 2024 – Presente",
+      "rol": "Lead Developer",
+      "skills": [
+        "Liderazgo de equipo de desarrollo",
+        "Planificación de roadmap",
+        "Despliegue de bots LLM",
+        "CI/CD con GitHub Actions, Docker, AWS Lambda",
+        "Uso de LangChain para moderación e interacción"
+      ]
+    },
+    {
+      "empresa": "Cukies World",
+      "periodo": "Septiembre 2021 – Presente",
+      "rol": "AI Solutions Engineer – Community Support",
+      "skills": [
+        "Desarrollo de arquitecturas RAG con LangChain",
+        "Despliegue CI/CD (GitHub Actions, Docker, AWS Lambda)",
+        "Administración de bases vectoriales (FAISS, Pinecone)",
+        "Soporte técnico y gestión de comunidades"
+      ]
+    },
+    {
+      "empresa": "Antirug Agent",
+      "periodo": "Noviembre 2024 – Abril 2025",
+      "rol": "Backend Developer",
+      "skills": [
+        "Desarrollo de bots de Telegram",
+        "Despliegue en AWS Lambda",
+        "Procesamiento y presentación de datos de API"
+      ]
+    },
+    {
+      "empresa": "Universidad de Buenos Aires",
+      "periodo": "2019 – 2024",
+      "rol": "Doctoral Researcher",
+      "skills": [
+        "Desarrollo de métodos para Drug Discovery",
+        "Modelado y análisis de datos experimentales",
+        "Automatización de procesamiento de datos",
+        "Trabajo interdisciplinario"
+      ]
+    }
+  ]
+} 

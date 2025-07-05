@@ -1,0 +1,38 @@
+services:
+  api:
+    build: .
+    container_name: santex_reto_api
+    ports:
+      - "5000:5000"
+    environment:
+      - FLASK_ENV=production
+      - PYTHONPATH=/app
+    volumes:
+      - ./logs:/app/logs
+    networks:
+      - santex_network
+    restart: unless-stopped
+
+  frontend:
+    build: ./Front
+    container_name: santex_reto_frontend
+    ports:
+      - "3000:3000"
+    environment:
+      - NODE_ENV=production
+      - API_URL=http://api:5000
+    volumes:
+      - ./Front/public:/app/public
+      - ./Front/src:/app/src
+    depends_on:
+      - api
+    networks:
+      - santex_network
+    restart: unless-stopped
+
+networks:
+  santex_network:
+    driver: bridge
+
+volumes:
+  logs: 

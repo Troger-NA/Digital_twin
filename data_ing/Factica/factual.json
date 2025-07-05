@@ -1,0 +1,124 @@
+[ 
+      {
+        "empresa": "Meton",
+        "rol": "Coordinador de operaciones & AI Engineer",
+        "periodo": "2023-2024",
+        "skills": [
+          "ai",
+          "multiagente",
+          "automatizacion",
+          "pipelines",
+          "hpc",
+          "coordinacion",
+          "drug discovery",
+          "metodologia",
+          "langchain",
+          "autogen",
+          "logs",
+          "trazabilidad",
+          "gestion de datos"
+        ],
+        "descripcion": "Desde abril de 2023 formo parte de Meton AI como Coordinador de Operaciones y AI Engineer. Allí lidero la implementación de sistemas multiagente, diseño y automatizo pipelines de datos, gestiono la infraestructura HPC y coordino equipos cross-funcionales. También me encargo de la automatización de logs y trazabilidad, y del modelado y gestión de datos para proyectos de drug discovery, integrando tanto software desarrollado internamente como soluciones de terceros.",
+        "como_aprendi": "A través de la implementación práctica en Meton, estudiando frameworks como langchain y autogen, y experimentando con diferentes arquitecturas de agentes para drug discovery. Desarrollando pipelines de datos complejos para drug discovery, aprendiendo de errores y optimizando procesos iterativamente. Gestionando clusters de computación de alto rendimiento para simulaciones moleculares, aprendiendo sobre gestión de recursos y optimización."
+      },
+      {
+        "empresa": "Stealth Crypto Project",
+        "rol": "Lead Developer",
+        "periodo": "2024-2025",
+        "skills": [
+          "planificacion",
+          "ai",
+          "ci/cd",
+          "github actions",
+          "aws",
+          "backend",
+          "python",
+          "docker",
+          "lambda",
+          "langchain"
+        ],
+        "descripcion": "Desde octubre de 2024 desempeño el rol de Lead Developer en un proyecto cripto en fase stealth. Coordino el roadmap técnico, lidero el equipo de desarrollo, despliego bots basados en llm y establezco pipelines de ci/cd con github actions, docker y aws lambda. Además, utilizo langchain para diseñar y supervisar flujos de moderación e interacción avanzados.",
+        "como_aprendi": "Liderando la planificación técnica de proyectos complejos, aprendiendo a balancear features, recursos y tiempo. Implementando soluciones ai en producción, aprendiendo de la experiencia práctica y manteniéndome actualizado con las últimas tecnologías. Implementando pipelines de ci/cd desde cero, aprendiendo mejores prácticas y optimizando procesos de deployment. Configurando workflows complejos para automatización, aprendiendo yaml y mejores prácticas de ci/cd."
+      },
+      {
+        "empresa": "Cukies World",
+        "rol": "ai solutions engineer – community support",
+        "periodo": "2021-2024",
+        "skills": [
+          "community manager",
+          "ai",
+          "ci/cd",
+          "aws",
+          "backend",
+          "langchain",
+          "rag",
+          "faiss",
+          "pinecone",
+          "python"
+        ],
+        "descripcion": "Desde septiembre de 2021 trabajo en Cukies World como ai solutions engineer y responsable de community support. He implementado arquitecturas rag basadas en langchain, montado pipelines de ci/cd usando github actions, docker y aws lambda, y gestionado bases vectoriales con faiss y pinecone. Paralelamente, brindo soporte técnico continuo y dinamizo la comunidad de usuarios.",
+        "como_aprendi": "Gestionando comunidades de usuarios técnicos, aprendiendo sobre engagement, soporte y dinamización de grupos. Implementando soluciones ai en producción, aprendiendo de la experiencia práctica y manteniéndome actualizado con las últimas tecnologías. Implementando pipelines de ci/cd desde cero, aprendiendo mejores prácticas y optimizando procesos de deployment. Desplegando aplicaciones en aws, aprendiendo sobre servicios cloud y optimización de costos."
+      },
+      {
+        "empresa": "Antirug Agent",
+        "rol": "backend developer",
+        "periodo": "2024-2025",
+        "skills": [
+          "backend",
+          "aws",
+          "telegram",
+          "python",
+          "lambda",
+          "apis"
+        ],
+        "descripcion": "Entre noviembre de 2024 y abril de 2025 formé parte de Antirug Agent como backend developer. Mi labor incluyó el desarrollo de bots para telegram, la orquestación de su despliegue en aws lambda y el diseño de flujos para procesar y presentar datos consumidos desde apis externas.",
+        "como_aprendi": "Desarrollando backends escalables, aprendiendo de la experiencia práctica y mejores prácticas de arquitectura. Desplegando aplicaciones en aws, aprendiendo sobre servicios cloud y optimización de costos. Trabajando con apis de telegram y desarrollando bots, aprendiendo sobre integración de servicios externos."
+      },
+      {
+        "empresa": "Universidad de Buenos Aires",
+        "rol": "doctoral researcher",
+        "periodo": "2019-2024",
+        "skills": [
+          "data science",
+          "simulacion",
+          "fluorescencia",
+          "metodologia",
+          "python",
+          "estadistica",
+          "machine learning",
+          "drug discovery"
+        ],
+        "descripcion": "Durante mi doctorado en la Universidad de Buenos Aires (2019–2024) investigué y desarrollé nuevos métodos para drug discovery. Realicé modelado y análisis de datos experimentales, automatizando pipelines de procesamiento de la información y colaborando en proyectos interdisciplinarios entre química, biología e informática.",
+        "como_aprendi": "Durante mi doctorado, aplicando métodos estadísticos y computacionales para análisis de datos experimentales, aprendiendo de papers científicos y colaborando con expertos. Desarrollando simulaciones computacionales para estudios moleculares, aprendiendo sobre métodos numéricos y validación de modelos. Estudiando fenómenos de fluorescencia durante mi investigación doctoral, aprendiendo técnicas experimentales y análisis de datos. Desarrollando nuevos métodos durante mi doctorado y aplicándolos en contextos industriales, aprendiendo a validar y documentar metodologías."
+      },
+      {
+        "empresa": "Personal",
+        "rol": "skills personales",
+        "periodo": "vida",
+        "skills": [
+          "cocina",
+          "musica",
+          "deportes",
+          "idiomas",
+          "fotografia",
+          "viajes",
+          "lectura",
+          "escritura",
+          "meditacion",
+          "yoga",
+          "ciclismo",
+          "futbol",
+          "guitarra",
+          "piano",
+          "espanol",
+          "ingles",
+          "portugues",
+          "fotografia digital",
+          "edicion de video",
+          "blogging",
+          "podcasting"
+        ],
+        "descripcion": "Skills y hobbies personales que he desarrollado a lo largo de mi vida, incluyendo actividades fisicas, artisticas, linguisticas y de desarrollo personal.",
+        "como_aprendi": "A través de la práctica constante, cursos online, experimentación personal y aprendizaje autodidacta. Muchos de estos skills los he desarrollado por interés personal y como forma de mantener un balance entre trabajo y vida personal."
+      }
+]

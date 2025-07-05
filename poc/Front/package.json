@@ -1,0 +1,30 @@
+{
+  "name": "nico-clone-frontend",
+  "version": "1.0.0",
+  "description": "Frontend for Nico's digital clone",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js",
+    "build": "webpack --mode production",
+    "dev-build": "webpack --mode development --watch"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "cors": "^2.8.5",
+    "body-parser": "^1.20.2",
+    "socket.io": "^4.7.2",
+    "node-fetch": "^2.6.7"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1",
+    "webpack": "^5.88.2",
+    "webpack-cli": "^5.1.4",
+    "css-loader": "^6.8.1",
+    "style-loader": "^3.3.3",
+    "html-webpack-plugin": "^5.5.3"
+  },
+  "keywords": ["chat", "ai", "frontend"],
+  "author": "Nico Clone Team",
+  "license": "MIT"
+} 
