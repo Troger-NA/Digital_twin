@@ -20,3 +20,4 @@ POC/
 └── Front/                   # Frontend web
 ```
 **En la proxima version, la DB de personalidad se implementa en pinecone**
+

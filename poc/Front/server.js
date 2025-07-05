@@ -21,25 +21,35 @@ app.get('/', (req, res) => {
 app.post('/api/chat', async (req, res) => {
     try {
         const { message } = req.body;
+        const clientToken = req.headers['x-auth-token'];
         
         if (!message) {
             return res.status(400).json({ error: 'Message is required' });
         }
 
-        // Forward the request to the Flask API
+        if (!clientToken) {
+            return res.status(401).json({ error: 'Authentication token required' });
+        }
+
+        // Forward the request to the FastAPI backend
         const apiUrl = process.env.API_URL || 'http://localhost:5000';
-        const secretToken = process.env.SECRET_TOKEN || 'SECRET_TOKEN_WZ2l5TwbNE5GDndCOatlZTmkM1SILjwCZbN-kPPZtgg';
+        
+        console.log(`[FRONTEND] Forwarding to: ${apiUrl}/api/chat`);
+        console.log(`[FRONTEND] Using client token: ${clientToken ? clientToken.substring(0, 10) + '...' : 'NOT SET'}`);
+        
         const response = await fetch(`${apiUrl}/api/chat`, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
-                'X-Secret-Token': secretToken
+                'Authorization': `Bearer ${clientToken}`
             },
             body: JSON.stringify({ message })
         });
 
         if (!response.ok) {
-            throw new Error(`Flask API error: ${response.status}`);
+            const errorText = await response.text();
+            console.error(`[FRONTEND] API Error ${response.status}:`, errorText);
+            throw new Error(`Flask API error: ${response.status} - ${errorText}`);
         }
 
         const data = await response.json();
@@ -56,14 +66,19 @@ app.get('/api/health', (req, res) => {
     res.json({ status: 'OK', message: 'Nico Clone Frontend is running' });
 });
 
-// Get logs from Flask API
+// Get logs from FastAPI backend
 app.get('/api/logs', async (req, res) => {
     try {
+        const clientToken = req.headers['x-auth-token'];
+        
+        if (!clientToken) {
+            return res.status(401).json({ error: 'Authentication token required' });
+        }
+        
         const apiUrl = process.env.API_URL || 'http://localhost:5000';
-        const secretToken = process.env.SECRET_TOKEN || 'SECRET_TOKEN_WZ2l5TwbNE5GDndCOatlZTmkM1SILjwCZbN-kPPZtgg';
         const response = await fetch(`${apiUrl}/api/logs`, {
             headers: {
-                'X-Secret-Token': secretToken
+                'Authorization': `Bearer ${clientToken}`
             }
         });
         if (!response.ok) {

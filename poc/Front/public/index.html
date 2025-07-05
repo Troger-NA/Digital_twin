@@ -8,7 +8,35 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
 </head>
 <body>
-    <div class="app-container">
+    <!-- Login Modal -->
+    <div class="login-modal" id="loginModal">
+        <div class="login-content">
+            <h2>
+                <i class="fas fa-key"></i>
+                Acceso a Nico Clone
+            </h2>
+            <p>Por favor, ingresa tu token de acceso:</p>
+            <div class="login-form">
+                <input 
+                    type="password" 
+                    id="tokenInput" 
+                    class="token-input" 
+                    placeholder="Ingresa tu token secreto..."
+                    autocomplete="off"
+                >
+                <button class="btn btn-primary" id="loginButton">
+                    <i class="fas fa-sign-in-alt"></i>
+                    Acceder
+                </button>
+            </div>
+            <div class="login-error" id="loginError" style="display: none;">
+                <i class="fas fa-exclamation-triangle"></i>
+                <span id="loginErrorText">Token inválido. Por favor, intenta de nuevo.</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="app-container" id="appContainer" style="display: none;">
         <!-- Header -->
         <header class="header">
             <div class="header-content">
@@ -20,6 +48,10 @@
                     <button class="btn btn-secondary" id="clearChat">
                         <i class="fas fa-trash"></i>
                         Limpiar Chat
+                    </button>
+                    <button class="btn btn-secondary" id="logoutButton">
+                        <i class="fas fa-sign-out-alt"></i>
+                        Cerrar Sesión
                     </button>
                 </div>
             </div>
